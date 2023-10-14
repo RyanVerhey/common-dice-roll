@@ -22,6 +22,7 @@ func main() {
 	sideNum, _ := strconv.Atoi(match[2])
 
 	combinations := generateDiceCombinations(diceNum, sideNum)
+
 	largestProbabilities := getDiceRollsWithLargestProbability(combinations)
 
 	fmt.Printf("Dice rolls with the largest probability: %d", largestProbabilities)
